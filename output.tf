@@ -4,10 +4,6 @@ output "storage_account_id" {
   value       = azurerm_storage_account.sa.id
 }
 
-output "storage_account_managed_identities_id" {
-  description = "The principal ID generated from enabling a Managed Identity with this storage account."
-  value       = azurerm_storage_account.sa.identity.0.principal_id
-}
 
 output "storage_account_tenant_id" {
   description = "The tenant ID for the Service Principal of this storage account."
