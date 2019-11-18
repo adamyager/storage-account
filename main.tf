@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "sa" {
-  resource_group_name      = var.resource_group_name
+  azurerm_resource_group      = var.azurerm_resource_group
   location                 = var.resource_group_location
   name                     = lower(var.account_name)
   account_tier             = var.performance_tier
