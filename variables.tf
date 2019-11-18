@@ -1,4 +1,4 @@
-variable "resource_group_name" {
+variable "azurerm_resource_group" {
   description = "The name of the resource group."
   type        = string
 }
